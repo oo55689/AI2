@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Measurement{% endblock %}
+
+{% block body %}
+    <h1>New Measurement</h1>
+
+    {{ include('measurement/_form.html.twig') }}
+
+    <div class="mt-3">
+        <a href="{{ path('app_measurement_index') }}"
+           class="btn btn-secondary">
+            Back to list
+        </a>
+    </div>
+{% endblock %}
